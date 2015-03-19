@@ -18,18 +18,18 @@ def main():
     # Keep these in lists instead of a dict to preserve ordering so we don't 
     # overwrite our replacements
     color_codes_hex_dark = [
-            'eee8d5',
-            '93a1a1',
-            '839496',
-            '657b83',
-            '586e75',
+        'eee8d5',
+        '93a1a1',
+        '839496',
+        '657b83',
+        '586e75',
     ]
     color_codes_hex_dark_high_contrast = [
-            'fdf6e3',
-            'eee8d5',
-            '93a1a1',
-            '839496',
-            '657b83',
+        'fdf6e3',
+        'eee8d5',
+        '93a1a1',
+        '839496',
+        '657b83',
     ]
     ''' These binary color codes are used by Eclipse preference files. I 
     generated them like this, since I wanted to actually have the codes 
@@ -87,8 +87,8 @@ def main():
     
     for i in range(len(color_codes_bin_dark)):
         outfile_data = outfile_data.replace(
-                    color_codes_bin_dark[i], 
-                    color_codes_bin_dark_high_contrast[i])
+                color_codes_bin_dark[i], 
+                color_codes_bin_dark_high_contrast[i])
     
     with open(
             '{}-high-contrast.{}'.format(*sys.argv[1].rsplit('.', 1)), 
