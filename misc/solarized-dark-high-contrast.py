@@ -71,16 +71,29 @@ def main():
     
     for i in range(len(color_codes_hex_dark)):
         if infile_case == Cases.lower:
-            outfile_data = outfile_data.replace(color_codes_hex_dark[i].lower(), color_codes_hex_dark_high_contrast[i].lower())
-            outfile_data = outfile_data.replace(color_codes_hex_dark[i].upper(), color_codes_hex_dark_high_contrast[i].lower())
+            outfile_data = outfile_data.replace(
+                    color_codes_hex_dark[i].lower(), 
+                    color_codes_hex_dark_high_contrast[i].lower())
+            outfile_data = outfile_data.replace(
+                    color_codes_hex_dark[i].upper(), 
+                    color_codes_hex_dark_high_contrast[i].lower())
         elif infile_case == Cases.upper:
-            outfile_data = outfile_data.replace(color_codes_hex_dark[i].lower(), color_codes_hex_dark_high_contrast[i].upper())
-            outfile_data = outfile_data.replace(color_codes_hex_dark[i].upper(), color_codes_hex_dark_high_contrast[i].upper())
+            outfile_data = outfile_data.replace(
+                    color_codes_hex_dark[i].lower(), 
+                    color_codes_hex_dark_high_contrast[i].upper())
+            outfile_data = outfile_data.replace(
+                    color_codes_hex_dark[i].upper(), 
+                    color_codes_hex_dark_high_contrast[i].upper())
     
     for i in range(len(color_codes_bin_dark)):
-        outfile_data = outfile_data.replace(color_codes_bin_dark[i], color_codes_bin_dark_high_contrast[i])
+        outfile_data = outfile_data.replace(
+                    color_codes_bin_dark[i], 
+                    color_codes_bin_dark_high_contrast[i])
     
-    with open('{}-high-contrast.{}'.format(*sys.argv[1].rsplit('.', 1)), 'w') as outfile:
+    with open(
+            '{}-high-contrast.{}'.format(*sys.argv[1].rsplit('.', 1)), 
+            'w'
+            ) as outfile:
         outfile.write(outfile_data)
 
 
