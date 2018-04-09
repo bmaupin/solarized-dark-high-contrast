@@ -1,0 +1,22 @@
+{
+    "name": "theme-solarized-dark-high-contrast",
+    "displayName": "Solarized Dark High Contrast Theme",
+    "description": "Solarized dark high contrast theme for Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "bmaupin",
+    "engines": {
+        "vscode": "*"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Solarized Dark High Contrast",
+                "uiTheme": "vs-dark",
+                "path": "./themes/solarized-dark-high-contrast-color-theme.json"
+            }
+        ]
+    }
+}
