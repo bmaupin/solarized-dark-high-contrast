@@ -357,7 +357,7 @@
 		"editor.lineHighlightBackground": "#073642",
 		"editorLineNumber.activeForeground": "#949494",
 		"editor.selectionBackground": "#073642",
-		// "editorIndentGuide.background": "",
+		"editorIndentGuide.background": "#586e75",
 		"editorHoverWidget.background": "#004052",
 		// "editorHoverWidget.border": "",
 		// "editorLineNumber.foreground": "",
