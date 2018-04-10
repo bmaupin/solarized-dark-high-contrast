@@ -2,7 +2,7 @@
     "name": "theme-solarized-dark-high-contrast",
     "displayName": "Solarized Dark High Contrast Theme",
     "description": "Solarized dark high contrast theme for Visual Studio Code",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "bmaupin",
     "engines": {
         "vscode": "*"
