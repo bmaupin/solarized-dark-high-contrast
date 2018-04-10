@@ -1,4 +1,4 @@
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/bmaupin/solarized-dark-high-contrast/master/vscode/screenshot.png)
 
 ### Installation from Marketplace
 
