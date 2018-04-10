@@ -1,4 +1,18 @@
-### Installation
+![screenshot](screenshot.png)
+
+### Installation from Marketplace
+
+1. Install the extension
+
+    Click the Extensions button on the left > search for Solarized Dark High Contrast > *Install*
+
+2. Click *Reload* to reload VS Code
+
+3. Choose the new colour theme
+
+    *File* (*Code* on Mac) > *Preferences* > *Color Theme* > *Solarized Dark High Contrast*
+
+### Manual installation
 
 1. Check out this repository
 
