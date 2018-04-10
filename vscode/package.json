@@ -18,5 +18,10 @@
                 "path": "./themes/solarized-dark-high-contrast-color-theme.json"
             }
         ]
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bmaupin/solarized-dark-high-contrast.git"
     }
 }
