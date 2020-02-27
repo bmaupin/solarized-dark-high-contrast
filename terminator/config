@@ -1,9 +1,17 @@
+# Man page: http://manpages.ubuntu.com/manpages/bionic/man5/terminator_config.5.html
+# Defaults: https://bazaar.launchpad.net/~gnome-terminator/terminator/gtk3/view/head:/terminatorlib/config.py#L84
+
 [global_config]
-  title_transmit_bg_color = "#d30102"
+  # We don't want the color offset to be too much because it reduces contrast (1 is confusingly no offset, default is 0.8)
+  inactive_color_offset = 0.95
+  title_inactive_bg_color = "#657b83"
+  title_inactive_fg_color = "#002b36"
+  title_transmit_bg_color = "#93a1a1"
+  title_transmit_fg_color = "#002b36"
 
 [profiles]
   [[default]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#fdf6e3:#002b36:#cb4b16:#657b83:#839496:#93a1a1:#6c71c4:#eee8d5:#fdf6e3"
+    foreground_color = "#93a1a1"
     background_color = "#002b36"
-    cursor_color = "#eee8d5"
+    cursor_color = "#93a1a1"
