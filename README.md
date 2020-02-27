@@ -11,5 +11,7 @@ In most cases, the difference is incredibly subtle (which is a good thing).
  ![solarized-dark-high-contrast](solarized-dark-high-contrast.png)
 
 You may be able to convert a normal Solarized dark color scheme file to high contrast by using the provided Python script:
-    
-    python solarized-dark-high-contrast.py solarized-dark-theme-file
+
+```
+python solarized-dark-high-contrast.py solarized-dark-theme-file > solarized-dark-high-contrast
+```

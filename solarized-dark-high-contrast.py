@@ -12,7 +12,7 @@ def main():
     infile_case = None
 
     if len(sys.argv) < 2:
-        sys.stderr.write('ERROR: Must provide a file to modify\n')
+        sys.stderr.write('ERROR: Must provide an input file\n')
         sys.exit('Usage: {} FILE'.format(sys.argv[0]))
 
     # Keep these in lists instead of a dict to preserve ordering so we don't
@@ -54,47 +54,43 @@ def main():
     ]
 
     with open(sys.argv[1], 'r') as infile:
-        outfile_data = infile.read()
+        output_data = infile.read()
 
     # Figure out whether the input is using upper or lower case color codes
     for color_code in color_codes_hex_dark:
         # Skip color codes that don't contain letters
         if color_code.lower() == color_code.upper():
             continue
-        if outfile_data.find(color_code.lower()) != -1:
+        if output_data.find(color_code.lower()) != -1:
             infile_case = Cases.lower
             # Use the first one we find as the decisive case
             break
-        elif outfile_data.find(color_code.upper()) != -1:
+        elif output_data.find(color_code.upper()) != -1:
             infile_case = Cases.upper
             break
 
     for i in range(len(color_codes_hex_dark)):
         if infile_case == Cases.lower:
-            outfile_data = outfile_data.replace(
+            output_data = output_data.replace(
                     color_codes_hex_dark[i].lower(),
                     color_codes_hex_dark_high_contrast[i].lower())
-            outfile_data = outfile_data.replace(
+            output_data = output_data.replace(
                     color_codes_hex_dark[i].upper(),
                     color_codes_hex_dark_high_contrast[i].lower())
         elif infile_case == Cases.upper:
-            outfile_data = outfile_data.replace(
+            output_data = output_data.replace(
                     color_codes_hex_dark[i].lower(),
                     color_codes_hex_dark_high_contrast[i].upper())
-            outfile_data = outfile_data.replace(
+            output_data = output_data.replace(
                     color_codes_hex_dark[i].upper(),
                     color_codes_hex_dark_high_contrast[i].upper())
 
     for i in range(len(color_codes_bin_dark)):
-        outfile_data = outfile_data.replace(
+        output_data = output_data.replace(
                 color_codes_bin_dark[i],
                 color_codes_bin_dark_high_contrast[i])
 
-    with open(
-            '{}-high-contrast.{}'.format(*sys.argv[1].rsplit('.', 1)),
-            'w'
-            ) as outfile:
-        outfile.write(outfile_data)
+    print(output_data)
 
 
 if __name__ == '__main__':
