@@ -12,6 +12,10 @@ sublime-text/Solarized (Dark high contrast).tmTheme
 Source: Sublime Text 3 internal theme from package (http://www.sublimetext.com/updates/3/stable/updatecheck?platform=linux)
 License: See file
 
+terminator/config
+Source: https://github.com/ghuntley/terminator-solarized/blob/master/config
+License: N/A
+
 vscode/themes/solarized-dark-high-contrast-color-theme.json
 Source: https://github.com/Microsoft/vscode/blob/master/extensions/theme-solarized-dark/themes/solarized-dark-color-theme.json
 License: MIT (https://github.com/microsoft/vscode/blob/master/LICENSE.txt)
