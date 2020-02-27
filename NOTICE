@@ -1,0 +1,21 @@
+The following files are from or contain content from external sources:
+
+eclipse/solarized-dark-high-contrast.epf
+Source: https://gist.github.com/devacto/7476826
+License: N/A
+
+gnome-terminal/solarized-dark-high-contrast.sh
+Source: https://gist.github.com/t-mart/1280177
+License: N/A
+
+sublime-text/Solarized (Dark high contrast).tmTheme
+Source: Sublime Text 3 internal theme from package (http://www.sublimetext.com/updates/3/stable/updatecheck?platform=linux)
+License: See file
+
+vscode/themes/solarized-dark-high-contrast-color-theme.json
+Source: https://github.com/Microsoft/vscode/blob/master/extensions/theme-solarized-dark/themes/solarized-dark-color-theme.json
+License: MIT (https://github.com/microsoft/vscode/blob/master/LICENSE.txt)
+
+xfce4-terminal/terminalrc
+Source: https://github.com/sgerrand/xfce4-terminal-colors-solarized/blob/master/dark-high-contrast/terminalrc
+License: MIT (https://github.com/sgerrand/xfce4-terminal-colors-solarized/blob/master/LICENSE)
